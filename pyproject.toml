@@ -1,0 +1,13 @@
+[project]
+name = "Black-Scholes Pricing"
+version = "0.0.1"
+authors = [
+    {name="Narayan Shimanoe Lisboa, email="narayan.lisboa@gmail.com}
+]
+description = ""
+readme = "README.md"
+requires-python = ""
+clasifiers = []
+
+[project.urls]
+Homepage = "https://github.com/dadi1/Black-Scholes-Pricing"
