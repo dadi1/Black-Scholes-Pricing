@@ -2,7 +2,7 @@
 name = "Black-Scholes Pricing"
 version = "0.0.1"
 authors = [
-    {name="Narayan Shimanoe Lisboa, email="narayan.lisboa@gmail.com}
+    {name="Narayan Shimanoe Lisboa", email="narayan.lisboa@gmail.com"}
 ]
 description = ""
 readme = "README.md"
