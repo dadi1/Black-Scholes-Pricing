@@ -6,14 +6,14 @@ T = 1 # One year of pricing
 N = 30 # Trading day with
 dt = T / N 
 
-def wiener_increment(r, sigma, S0):
+def wiener_increment(S0, sigma, r):
     """
     Simulation following a Wiener Process of the derivative price
     
     Parameters:
+    - S0: float - initial price of underlying asset
     - r: float - free risk rate
     - sigma: float - underlying asset volatility
-    - S0: float - initial price of underlying asset
 
     Return:
     - St: float - price of the underlying asset for all Time
@@ -26,13 +26,13 @@ def wiener_increment(r, sigma, S0):
     R1 = np.exp(r * T)
 
     # Generating random seed
-    seed1 = np.random.Generator() # Each simulation will get a random seed for it's own simulation
+    #seed1 = np.random.Generator() # Each simulation will get a random seed for it's own simulation
 
     # Generating random numbers 
-    np.random.seed(seed1)
+    np.random.seed(1335)
 
     # Wiener Process
-    dW = np.random.normal(0, sqrt(dt), N) # Wiener increment
+    dW = np.random.normal(0, np.sqrt(dt), N) # Wiener increment
     W = np.cumsum(np.insert(dW, 0, 0)) # Cumulative Wiener Process
 
     # Price of the underlying asset for all discrete times
