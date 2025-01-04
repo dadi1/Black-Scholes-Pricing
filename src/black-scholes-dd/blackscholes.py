@@ -21,9 +21,9 @@ def black_scholes(S , K, r, sigma, Tau):
     - Tau: float - time of the asset maturity
     
     Return:
-    - V: float -
-    - N1: float - 
-    - N1: float - 
+    - V: float - price calculated
+    - N1: float - acumulated probability for d1
+    - N1: float - acumulated probability for d2
     """
     # Calculation for d1 a and d2
     d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * Tau) / (sigma * np.sqrt(Tau))
