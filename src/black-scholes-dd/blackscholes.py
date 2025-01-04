@@ -29,7 +29,7 @@ def black_scholes(S , K, r, sigma, Tau):
     d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * Tau) / (sigma * np.sqrt(Tau))
     d2 = d1 - sigma * np.sqrt(T)
 
-    # Calculation for N1 and N2
+    # normalization for d1 and d2
     N1 = norm.cdf(d1)
     N2 = norm.cdf(d2)
 
