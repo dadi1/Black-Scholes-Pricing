@@ -6,8 +6,9 @@ authors = [
 ]
 description = "small library project implemented in C++ for Python of Black-Scholes formula for derivative pricing"
 readme = "README.md"
-requires-python = ""
-clasifiers = []
+requires-python = "Python 3.10.12"
+license = "MIT"
+keywords = ["black-scholes", "derivative", "option"]
 
 [project.urls]
 Homepage = "https://github.com/dadi1/Black-Scholes-Pricing"
