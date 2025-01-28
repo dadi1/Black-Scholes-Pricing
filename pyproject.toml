@@ -4,7 +4,7 @@ version = "0.0.1"
 authors = [
     {name="Narayan Shimanoe Lisboa", email="narayan.lisboa@gmail.com"}
 ]
-description = ""
+description = "small library project implemented in C++ for Python of Black-Scholes formula for derivative pricing"
 readme = "README.md"
 requires-python = ""
 clasifiers = []
