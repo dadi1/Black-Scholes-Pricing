@@ -19,7 +19,7 @@ extern "C" {
                                double Vol,
                                double Expiry)
     {
-        BlackScholesCall(Spot, Strike, r, d, Vol, Expiry);
+        return BlackScholesCall(Spot, Strike, r, d, Vol, Expiry);
     }
 
     // Function for Put Option.
@@ -30,7 +30,7 @@ extern "C" {
                               double Vol,
                               double Expiry)
     {
-        BlackScholesPut(Spot, Strike, r, d, Vol, Expiry);
+        return BlackScholesPut(Spot, Strike, r, d, Vol, Expiry);
     }
 
     // BlackScholesDigitalCall() for ctypes.
@@ -41,7 +41,7 @@ extern "C" {
                                       double Vol,
                                       double Expiry)
     {
-        BlackScholesDigitalCall(Spot, Strike, r, d, Vol, Expiry);
+        return BlackScholesDigitalCall(Spot, Strike, r, d, Vol, Expiry);
     }
 
     // BlackScholesCallVeega() for ctypes.
@@ -52,7 +52,7 @@ extern "C" {
                                    double Vol,
                                    double Expiry)
     {
-        BlackScholesCallVega(Spot, Strike, r, d, Vol, Expiry);
+        return BlackScholesCallVega(Spot, Strike, r, d, Vol, Expiry);
     }
 
 }
