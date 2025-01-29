@@ -56,8 +56,8 @@ double BlackScholesPut(double Spot,
     return std::exp(-r * Expiry) * CumulativeNormal(d2);
 }
 
-// Function for Digital Put Option.
-double BlackScholesDigitalPut(double Spot,
+// Function for Digital Call Option.
+double BlackScholesDigitalCall(double Spot,
                               double Strike,
                               double r,
                               double d,
