@@ -98,3 +98,5 @@ extern "C"
                                    double Vol,
                                    double Expiry);
 }
+
+#endif 
