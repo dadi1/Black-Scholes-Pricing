@@ -32,8 +32,15 @@ int main()
     std::cout << "for Spot = 100, Strike = 110, r = 0.01, d = 0.02, Vol = 0.2, Expiry = 1" << std::endl;
     std::cout << "result is: " << BlackScholesPut(100, 110, 0.01, 0.02, 0.2, 1) << std::endl;
     
+    // for function BlackScholesDigitalCall():
+    std::cout << "BlackScholesDigitalCall() function teest: " << std::endl;
+    std::cout << "for Spot = 100, Strike = 110, r = 0.01, d = 0.02, Vol = 0.2, Expiry = 1" << std::endl;
+    std::cout << "result is: " << BlackScholesDigitalCall(100, 110, 0.01, 0.02, 0.2, 1) << std::endl;
     
-    
-    
+    //for Function BlackScholesCallVega():
+    std::cout << "BlackScholesCallVega() function test: " << std::endl;
+    std::cout << "for Spot = 100, Strike = 110, r = 0.01, d = 0.02, Vol = 0.2, Expiry = 1" << std::endl;
+    std::cout << "result is: " <<  BlackScholesCallVega(100, 110, 0.01, 0.02, 0.2, 1) << std::endl;
+
     return 0;
 }
