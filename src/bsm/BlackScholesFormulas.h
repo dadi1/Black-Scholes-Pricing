@@ -18,6 +18,9 @@
  * 
  */
 
+#ifndef BLACK_SCHOLES_CALL_H
+#define BLACK_SCHOLES_CALL_H
+
 // Function for Call Option.
 double BlackScholesCall( double Spot,
                           double Strike,
@@ -52,3 +55,46 @@ double BlackScholesCallVega( double Spot,
                           double d,
                           double Vol,
                           double Expiry);
+                          
+/**
+ * 
+ * Implemetation For Ctypes function, as copy of the 
+ *  above function
+ * 
+ */
+
+extern "C" 
+{
+    // BlackScholesCall() for ctypes.
+    double BlackScholesCall_c( double Spot,
+                               double Strike,
+                               double r,
+                               double d,
+                               double Vol,
+                               double Expiry);
+
+
+    // BlackScholesPut() for ctypes.
+    double BlackScholesPut_c( double Spot,
+                              double Strike,
+                              double r,
+                              double d,
+                              double Vol,
+                              double Expiry);
+
+    // BlackScholesDigitalCall() for ctypes.
+    double BlackScholesDigitalCall_c( double Spot,
+                                      double Strike,
+                                      double r,
+                                      double d,
+                                      double Vol,
+                                      double Expiry);
+
+    // BlackScholesCallVeega() for ctypes.
+    double BlackScholesCallVega_c( double Spot,
+                                   double Strike,
+                                   double r,
+                                   double d,
+                                   double Vol,
+                                   double Expiry);
+}
