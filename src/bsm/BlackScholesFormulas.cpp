@@ -3,7 +3,7 @@
  * @author Narayan Shimanoe Lisboa
  * @date 28/01/2025
  * 
- * @brief Header File implemetation of Black-Scholes function for pricing derivatives
+ * @brief Souce File implemetation of Black-Scholes function for pricing derivatives
  */
 
 /**
