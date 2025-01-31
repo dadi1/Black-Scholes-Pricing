@@ -18,14 +18,14 @@ with parameters:
     volatility = 0.2
     Time = 1
     """
-"""
+
 BlackScholesCall = ctypes.CDLL("./libtest.so").BlackScholesCall_c
 
 BlackScholesCall.restype = None
 BlackScholesCall.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
 BlackScholesCall.restype = ctypes.c_double
 
-print(BlackScholesCall(100.0, 110.0, 0.01, 0.02, 0.2, 1.0)) """
+print(BlackScholesCall(100.0, 110.0, 0.01, 0.02, 0.2, 1.0)) 
 
 """
 
@@ -39,14 +39,14 @@ with parameters:
     Time = 1
     """
 
-"""
+
 BlackScholesPut = ctypes.CDLL("./libtest.so").BlackScholesPut_c
 
 BlackScholesPut.restype = None
 BlackScholesPut.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
 BlackScholesPut.restype = ctypes.c_double
 print(BlackScholesPut(100.0, 110.0, 0.01, 0.02, 0.2, 1.0))
-"""
+
 
 
 """
@@ -60,8 +60,28 @@ with parameters:
     Time = 1
 """
 
+
 BlackScholesDigitalCall = ctypes.CDLL("./libtest.so").BlackScholesDigitalCall_c
 
 BlackScholesDigitalCall.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
 BlackScholesDigitalCall.restype = ctypes.c_double
 print(BlackScholesDigitalCall(100.0, 110.0, 0.01, 0.02, 0.2, 1.0))
+
+
+
+"""
+Test for BlackScholesCallVega() function
+with parameters:
+    Spot = 100
+    Strike = 110
+    r = 0.01
+    d = 0.02
+    volatility = 0.2
+    Time = 1
+"""
+
+BlackScholesCallVega = ctypes.CDLL("./libtest.so").BlackScholesCallVega_c
+
+BlackScholesCallVega.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
+BlackScholesCallVega.restype = ctypes.c_double
+print(BlackScholesCallVega(100.0, 110.0, 0.01, 0.02, 0.2, 1.0))
