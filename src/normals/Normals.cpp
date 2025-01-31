@@ -74,10 +74,10 @@ double CumulativeNormal(double x)
 
 
     if (x < -7.0)
-        return NormalDensity(x) / std::sqrt(1. + x * x);
+        return NormalDensity(x) / std::sqrt(1.0 + x * x);
     
     if (x > 7.0)
-        return 1.0 - CumulativeNormal(x);
+        return 1.0 - CumulativeNormal(-x);
     
     double result;
     double tmp = 1.0 / (1.0 + 2.316319 + std::fabs(x));
