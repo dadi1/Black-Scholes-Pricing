@@ -3,6 +3,10 @@
 ## Python Library Project:
 ### Small Library Project Implemented in C++ for Python using Black-Scholes Method for Pricing Derivatives
 
+### To do list
+- [ ] Add defense programming.
+- [ ] Numpy/Pandas compabillity.
+
 ## References
 
 1. K¨oberle, Roland. Conceito de Física Matemática Financeira. 1st Edition. 2024.
