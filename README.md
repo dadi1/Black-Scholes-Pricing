@@ -2,7 +2,7 @@
 Small Python Library Project Implemented in C++ to be use in Python for pricing Option using Black-Scholes Method.
 
 ## Python Library Project:
-This Project was inspired for Roland Korbeles`s book on Mathematical Physics applied on Finance[1] and the code in the book can be seen [here](base-code/basecode.m). Also some part of the Code was inspiring in Mark S. Joshi Book. 
+This Project was inspired for Roland Korbeles`s book on Mathematical Physics applied on Finance[1] and the code in the book can be seen [here](base-code/basecode.m). Also some part of the Code was inspiring in Mark S. Joshi Book[2]. 
 
 The main purpose of this project is to help me learn how to implemented a code in C++ and make Python compatible and for this project I use Ctypes[3].
 
