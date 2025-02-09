@@ -21,6 +21,7 @@
 #include "BlackScholesFormulas.h"
 #include "../normals/Normals.h"
 #include <cmath>
+#include "../validation/Validation.h"
 
 // Function for Call Option.
 double BlackScholesCall(double Spot,
@@ -30,6 +31,15 @@ double BlackScholesCall(double Spot,
                         double Vol,
                         double Expiry)
 {
+    // Defense programming.
+    validation::validation_double_bsm(Spot,
+                                      Strike,
+                                      r,
+                                      d,
+                                      Vol,
+                                      Expiry);
+    // BlackScholesCall implematation.
+
     double standardDeviation = Vol * std::sqrt(Expiry);
     double moneyNess = std::log(Spot / Strike);
     double d1 = (moneyNess + (r - d) * Expiry +
@@ -48,6 +58,15 @@ double BlackScholesPut(double Spot,
                        double Vol,
                        double Expiry)
 {
+    // Defense programming.
+    validation::validation_double_bsm(Spot,
+                                      Strike,
+                                      r,
+                                      d,
+                                      Vol,
+                                      Expiry);
+
+    // BlackScholesPut implemetation.
     double standardDeviation = Vol * std::sqrt(Expiry);
     double moneyNess = std::log(Spot / Strike);
     double d2 = (moneyNess + (r - d) * Expiry -
@@ -64,6 +83,15 @@ double BlackScholesDigitalCall(double Spot,
                               double Vol,
                               double Expiry)
 {
+    // Defense programming.
+    validation::validation_double_bsm(Spot,
+                                      Strike,
+                                      r,
+                                      d,
+                                      Vol,
+                                      Expiry);
+
+    // BlackScholesDigitalCall Implemetation.
     double standardDeviation = Vol * std::sqrt(Expiry);
     double moneyNess = std::log(Spot / Strike);
     double d2 = (moneyNess + (r - d) * Expiry - 
@@ -80,6 +108,15 @@ double BlackScholesCallVega(double Spot,
                             double Vol,
                             double Expiry)
 {
+    // Defense programming.
+    validation::validation_double_bsm(Spot,
+                                      Strike,
+                                      r,
+                                      d,
+                                      Vol,
+                                      Expiry);
+
+    // BlackScholesCallVega Implematation.
     double standardDeviation = Vol * std::sqrt(Expiry);
     double moneyNess = std::log(Spot / Strike);
     double d1 = (moneyNess + (r - d) * Expiry + 
