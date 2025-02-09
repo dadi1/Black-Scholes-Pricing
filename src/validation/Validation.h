@@ -4,7 +4,7 @@
 #include <typeinfo>
 #include <stdexcept>
 
-namespace validatoin
+namespace validation
 {
     void validation_double_bsm(double Spot,
                                double Strike,

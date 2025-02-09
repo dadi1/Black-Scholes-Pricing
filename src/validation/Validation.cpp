@@ -1,6 +1,6 @@
 #include "Validation.h"
 
-namespace validaton
+namespace validation
 {
     void validation_double_bsm(double Spot,
                                double Strike,
