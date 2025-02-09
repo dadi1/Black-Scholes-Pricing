@@ -1,6 +1,7 @@
 #ifndef VALIDATION_H
 #define VALIDATION_H
 
+#include <typeinfo>
 #include <stdexcept>
 
 namespace validatoin
