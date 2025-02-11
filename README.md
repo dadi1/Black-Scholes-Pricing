@@ -14,6 +14,6 @@ The main purpose of this project is to help me learn how to implemented a code i
 
 ### References
 
-1. K¨oberle, Roland. Conceito de Física Matemática Financeira. 1st Edition. 2024.
+1. Köberle, Roland. Conceito de Física Matemática Financeira. 1st Edition. 2024.
 2. Joshi, Mark S. C++ Design Patterns and Derivatives Prices. 2nd Edition. 2008.
 3. https://docs.python.org/3/library/ctypes.html.
